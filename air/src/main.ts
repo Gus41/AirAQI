@@ -1,4 +1,7 @@
-import { Analytics } from "@vercel/analytics/react"
+import { inject } from "@vercel/analytics"
+
+console.log(inject)
+
 const apiKey = import.meta.env.VITE_AIRVISUAL_API_KEY;
 const url = `https://api.airvisual.com/v2/nearest_city?key=${apiKey}`;
 const CACHE_DURATION = 3600 * 1000; // 1 hora em milissegundos
